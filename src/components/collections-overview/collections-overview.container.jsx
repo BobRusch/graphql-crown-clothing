@@ -25,8 +25,7 @@ const CollectionOverviewContainer = () => (
     {
       ({ loading, data }) => {
         if (loading) return <Spinner />
-        const { collections } = data;
-        return <CollectionOverview collections={collections} />
+        return <CollectionOverview collections={data.collections} />
       }
     }
   </Query>
